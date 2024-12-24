@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cricket Game</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Bat  Ball  Stump Game : </h1>
+    <hr/>
+
+    <div style="text-align: center; margin: 30px; padding: 20px;">
+        <button class="bat" style="margin: 20px; padding: 15px; font-size: 20px;"
+        
+        
+        onclick="
+        
+        let randomChoice=Math.random()*3;
+        let computerChoice='';
+
+        if(randomChoice>0 && randomChoice<=1){
+            computerChoice='Bat'
+            console.log('computer choice is Bat');
+        
+        }else if(randomChoice>1 && randomChoice<=2){
+            computerChoice='Ball'
+            console.log('computer choice is Ball');
+            
+        }
+        else{
+            computerChoice='Stump'
+            console.log('computer choice is stump');
+            
+        }
+        
+
+        let resultmsg;
+        if(computerChoice==='Ball'){
+            resultmsg='user won'
+        }
+        else if(computerChoice==='Bat'){
+            resultmsg='it is tie'
+        }
+        else{
+            resultmsg='you loose'
+            
+        }
+
+        console.log(`Random choice : ${randomChoice} , computer choice: ${computerChoice} ,Final result is : ${resultmsg}`)
+
+
+        
+        "       
+        >Bat</button>
+        <button class="bat" style="margin: 20px; padding: 15px; font-size: 20px">Ball</button>
+        <button class="bat" style="margin: 20px; padding: 15px; font-size: 20px">Stumps</button>
+
+    </div>
+    
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
